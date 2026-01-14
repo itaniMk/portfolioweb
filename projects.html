@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Itani Makherana</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .project-card {
+      background: var(--glass);
+      backdrop-filter: blur(14px);
+      border-radius: 16px;
+      padding: 24px;
+      border: 1px solid rgba(255,255,255,0.15);
+      transition: all 0.3s ease;
+      text-align: left;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(168,85,247,0.2);
+      border-color: rgba(168,85,247,0.3);
+    }
+
+    .project-card h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: var(--text-main);
+    }
+
+    .project-card p {
+      color: var(--text-muted);
+      margin-bottom: 16px;
+      line-height: 1.6;
+    }
+
+    .project-tech {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .tech-tag {
+      background: rgba(168,85,247,0.2);
+      color: var(--accent-purple);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    .project-links {
+      display: flex;
+      gap: 12px;
+    }
+
+    .project-links a {
+      text-decoration: none;
+      color: var(--accent-blue);
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: color 0.3s ease;
+    }
+
+    .project-links a:hover {
+      color: var(--accent-purple);
+    }
+
+    @media (max-width: 768px) {
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Intro</a>
+  <a href="journey.html">Journey</a>
+  <a href="projects.html" class="active">Projects</a>
+  <a href="achievements.html">Achievements</a>
+  <a href="resume.html">Resume</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+  <div class="projects-header">
+    <h1>My <span>Projects</span></h1>
+    <p>
+      Here are some of the backend projects I've built to sharpen my skills in system design, API development, and database management. Each project demonstrates practical application of modern backend technologies.
+    </p>
+  </div>
+
+  <div class="projects-grid">
+    <div class="project-card">
+      <h3>E-Commerce API</h3>
+      <p>A robust RESTful API for an e-commerce platform built with Spring Boot, featuring user authentication, product management, and order processing.</p>
+      <div class="project-tech">
+        <span class="tech-tag">Java</span>
+        <span class="tech-tag">Spring Boot</span>
+        <span class="tech-tag">PostgreSQL</span>
+        <span class="tech-tag">JWT</span>
+      </div>
+      <div class="project-links">
+        <a href="#" target="_blank">View Code</a>
+        <a href="#" target="_blank">Live Demo</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>Task Management System</h3>
+      <p>A microservices-based task management application with user roles, real-time notifications, and scalable architecture using Docker and Kubernetes.</p>
+      <div class="project-tech">
+        <span class="tech-tag">Node.js</span>
+        <span class="tech-tag">Express</span>
+        <span class="tech-tag">MongoDB</span>
+        <span class="tech-tag">Docker</span>
+      </div>
+      <div class="project-links">
+        <a href="#" target="_blank">View Code</a>
+        <a href="#" target="_blank">Live Demo</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>Data Analytics Dashboard</h3>
+      <p>A backend service for processing and visualizing large datasets, including ETL pipelines, data warehousing, and API endpoints for frontend consumption.</p>
+      <div class="project-tech">
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">FastAPI</span>
+        <span class="tech-tag">Redis</span>
+        <span class="tech-tag">Apache Spark</span>
+      </div>
+      <div class="project-links">
+        <a href="#" target="_blank">View Code</a>
+        <a href="#" target="_blank">Live Demo</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  © 2026 Itani Makherana
+</footer>
+
+</body>
+</html>

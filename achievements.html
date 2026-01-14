@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Achievements | Itani Makherana</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .achievements-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .achievement-card {
+      background: var(--glass);
+      backdrop-filter: blur(14px);
+      border-radius: 16px;
+      padding: 24px;
+      border: 1px solid rgba(255,255,255,0.15);
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    .achievement-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(168,85,247,0.2);
+      border-color: rgba(168,85,247,0.3);
+    }
+
+    .achievement-icon {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 16px;
+      background: linear-gradient(45deg, var(--accent-purple), var(--accent-blue));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      color: #05050a;
+      font-weight: bold;
+    }
+
+    .achievement-card h3 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: var(--text-main);
+    }
+
+    .achievement-card p {
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    .progress-bar {
+      background: rgba(255,255,255,0.1);
+      border-radius: 10px;
+      height: 8px;
+      overflow: hidden;
+      margin-bottom: 8px;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent-purple), var(--accent-blue));
+      border-radius: 10px;
+      transition: width 0.8s ease;
+    }
+
+    .progress-text {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 18px;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.5);
+    }
+
+    @media (max-width: 768px) {
+      .achievements-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      nav {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Intro</a>
+  <a href="journey.html">Journey</a>
+  <a href="projects.html">Projects</a>
+  <a href="achievements.html" class="active">Achievements</a>
+  <a href="resume.html">Resume</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+  <div class="achievements-header">
+    <h1>My <span>Achievements</span></h1>
+    <p>
+      Milestones, skills, and progress markers on my path to becoming a backend developer. Each achievement represents a step forward in mastering the craft.
+    </p>
+  </div>
+
+  <div class="achievements-grid">
+    <div class="achievement-card">
+      <div class="achievement-icon"></div>
+      <h3>5+ Backend Projects</h3>
+      <p>Built complete applications from e-commerce APIs to microservices, applying real-world backend patterns and best practices.</p>
+    </div>
+
+    <div class="achievement-card">
+      <div class="achievement-icon"></div>
+      <h3>Java & Spring Boot</h3>
+      <p>Mastered enterprise Java development with Spring Boot, including REST APIs, security, and database integration.</p>
+      <div class="progress-bar">
+        <div class="progress-fill" style="width: 85%;"></div>
+      </div>
+      <div class="progress-text">85% Proficiency</div>
+    </div>
+
+    <div class="achievement-card">
+      <div class="achievement-icon"></div>
+      <h3>Database Expertise</h3>
+      <p>Proficient in SQL (PostgreSQL, MySQL) and NoSQL (MongoDB) databases, including query optimization and data modeling.</p>
+      <div class="progress-bar">
+        <div class="progress-fill" style="width: 80%;"></div>
+      </div>
+      <div class="progress-text">80% Proficiency</div>
+    </div>
+
+    <div class="achievement-card">
+      <div class="achievement-icon"></div>
+      <h3>Cloud & DevOps</h3>
+      <p>Experience with Docker containerization, basic AWS services, and CI/CD pipelines for scalable deployments.</p>
+      <div class="progress-bar">
+        <div class="progress-fill" style="width: 70%;"></div>
+      </div>
+      <div class="progress-text">70% Proficiency</div>
+    </div>
+
+    <div class="achievement-card">
+      <div class="achievement-icon"></div>
+      <h3>API Security</h3>
+      <p>Implemented JWT authentication, OAuth flows, and secure API design patterns in multiple projects.</p>
+    </div>
+
+    <div class="achievement-card">
+      <div class="achievement-icon"></div>
+      <h3>Problem Solving</h3>
+      <p>Solved 200+ algorithmic problems on platforms like LeetCode, building strong foundation in data structures and algorithms.</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  © 2026 Itani Makherana
+</footer>
+
+</body>
+</html>

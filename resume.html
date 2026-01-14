@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume | Itani Makherana</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .resume-container {
+      max-width: 900px;
+      width: 100%;
+      background: var(--glass);
+      backdrop-filter: blur(14px);
+      border-radius: 16px;
+      padding: 30px;
+      border: 1px solid rgba(255,255,255,0.15);
+      margin-bottom: 20px;
+    }
+
+    .resume-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .resume-header h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 900;
+      letter-spacing: -1px;
+      margin-bottom: 8px;
+    }
+
+    .resume-header h1 span {
+      background: linear-gradient(90deg, var(--accent-purple), var(--accent-blue));
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .resume-header .subtitle {
+      color: var(--accent-blue);
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 30px;
+    }
+
+    .resume-section {
+      margin-bottom: 25px;
+    }
+
+    .resume-section h2 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 15px;
+      border-bottom: 2px solid var(--accent-purple);
+      padding-bottom: 5px;
+    }
+
+    .skill-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .skill-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .skill-name {
+      font-weight: 600;
+    }
+
+    .skill-level {
+      color: var(--accent-blue);
+      font-size: 0.9rem;
+    }
+
+    .experience-item, .education-item {
+      margin-bottom: 20px;
+    }
+
+    .experience-item h3, .education-item h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 5px;
+    }
+
+    .experience-item .company, .education-item .institution {
+      color: var(--accent-purple);
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    .experience-item .date, .education-item .date {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+
+    .experience-item p, .education-item p {
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .download-section {
+      text-align: center;
+    }
+
+    .btn-download {
+      background: linear-gradient(90deg, var(--accent-purple), var(--accent-blue));
+      color: #05050a;
+      border: none;
+      padding: 14px 30px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-download:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(168,85,247,0.4);
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 18px;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.5);
+    }
+
+    @media (max-width: 768px) {
+      .resume-container {
+        padding: 20px;
+      }
+      
+      .contact-info {
+        gap: 15px;
+      }
+      
+      nav {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Intro</a>
+  <a href="journey.html">Journey</a>
+  <a href="projects.html">Projects</a>
+  <a href="achievements.html">Achievements</a>
+  <a href="resume.html" class="active">Resume</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+  <div class="resume-container">
+    <div class="resume-header">
+      <h1>Itani <span>Makherana</span></h1>
+      <div class="subtitle">Aspiring Backend Developer</div>
+    </div>
+
+    <div class="contact-info">
+      <span>itani@example.com</span>
+      <span>+1 (555) 123-4567</span>
+      <span>linkedin.com/in/itanimakherana</span>
+      <span>github.com/itanimakherana</span>
+    </div>
+
+    <div class="resume-section">
+      <h2>Skills</h2>
+      <div class="skill-grid">
+        <div class="skill-item">
+          <span class="skill-name">Java & Spring Boot</span>
+          <span class="skill-level">Advanced</span>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">Node.js & Express</span>
+          <span class="skill-level">Intermediate</span>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">PostgreSQL & MongoDB</span>
+          <span class="skill-level">Advanced</span>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">REST APIs & GraphQL</span>
+          <span class="skill-level">Advanced</span>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">Docker & Kubernetes</span>
+          <span class="skill-level">Intermediate</span>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">AWS & Cloud Services</span>
+          <span class="skill-level">Intermediate</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="resume-section">
+      <h2>Experience</h2>
+      <div class="experience-item">
+        <h3>Backend Developer Intern</h3>
+        <div class="company">Tech Startup Inc.</div>
+        <div class="date">Jun 2025 - Present</div>
+        <p>Developed RESTful APIs using Spring Boot, integrated with PostgreSQL databases, and implemented JWT authentication. Collaborated on microservices architecture and deployed applications using Docker.</p>
+      </div>
+      <div class="experience-item">
+        <h3>Freelance Developer</h3>
+        <div class="company">Self-Employed</div>
+        <div class="date">Jan 2025 - May 2025</div>
+        <p>Built custom web applications for small businesses using Node.js and Express. Designed database schemas, implemented secure authentication, and optimized application performance.</p>
+      </div>
+    </div>
+
+    <div class="resume-section">
+      <h2>Education</h2>
+      <div class="education-item">
+        <h3>Bachelor of Computer Science</h3>
+        <div class="institution">University of Technology</div>
+        <div class="date">2022 - 2026</div>
+        <p>Focus on software engineering and system design. Relevant coursework: Data Structures, Algorithms, Database Systems, and Software Architecture.</p>
+      </div>
+    </div>
+
+    <div class="resume-section">
+      <h2>Projects</h2>
+      <div class="experience-item">
+        <h3>E-Commerce API | Spring Boot, PostgreSQL</h3>
+        <div class="date">2025</div>
+        <p>Built a complete e-commerce backend with user management, product catalog, shopping cart, and payment integration. Features include JWT authentication and role-based access control.</p>
+      </div>
+      <div class="experience-item">
+        <h3>Task Management System | Node.js, MongoDB</h3>
+        <div class="date">2025</div>
+        <p>Developed a collaborative task management application with real-time updates using Socket.io. Implemented user authentication, project management, and team collaboration features.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="download-section">
+    <a href="#" class="btn-download">Download Full Resume (PDF)</a>
+  </div>
+</main>
+
+<footer>
+  © 2026 Itani Makherana
+</footer>
+
+</body>
+</html>

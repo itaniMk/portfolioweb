@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Itani Makherana | Aspiring Backend Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(34,197,94,0.15);
+      color: #22c55e;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 22px;
+    }
+
+    .status::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background: #22c55e;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #22c55e;
+    }
+
+    .hero {
+      max-width: 900px;
+    }
+
+    .hero strong {
+      color: var(--text-main);
+    }
+
+    .cta {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 14px 30px;
+      border-radius: 999px;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 0.95rem;
+      border: 2px solid transparent;
+    }
+
+    .btn-primary {
+      background: linear-gradient(90deg, var(--accent-purple), var(--accent-blue));
+      color: #05050a;
+    }
+
+    .btn-outline {
+      border-color: rgba(255,255,255,0.4);
+      color: var(--text-main);
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Intro</a>
+  <a href="journey.html">Journey</a>
+  <a href="projects.html">Projects</a>
+  <a href="achievements.html">Achievements</a>
+  <a href="resume.html">Resume</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+  <div class="hero">
+    <div class="status">Available for opportunities</div>
+
+    <h1>Itani <span>Makherana</span></h1>
+
+    <p>
+      I am an <strong>aspiring backend developer</strong> who is passionate about learning how
+      reliable systems are built, how APIs communicate, and how data flows through real-world
+      applications.
+      <br /><br />
+      I am currently <strong>aspiring</strong> to master Java, Spring Boot, SQL databases, and
+      backend architecture through hands-on projects and continuous learning.
+    </p>
+
+    <div class="cta">
+      <a href="projects.html" class="btn btn-primary">View My Work</a>
+      <a href="resume.html" class="btn btn-outline">Download Resume</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  © 2026 Itani Makherana
+</footer>
+
+</body>
+</html>
